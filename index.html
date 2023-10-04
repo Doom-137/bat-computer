@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <title>Bat Computer - Home</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono">
+    <link rel="stylesheet" href="fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf">
+</head>
+
+<body>
+
+    <div id="mySidebar" class="sidebar">
+        <div>
+            <img id="nav-bat-symbol" src="img/logo-bat_symbol-3840x2160.png"/>
+            <a href="javascript:void(0)" class="closebtn" id="button-control-nav" onclick="openNav()">☰</a>
+        </div>
+
+        <ul class="dropdown-menu">
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown">Home</a>
+            </li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown">XXXXXX<i class="icon-arrow"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">XXXXXX</a></li>
+                    <li><a href="#">XXXXXX</a></li>
+                    <li><a href="#">XXXXXX</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown">XXXXXX<i class="icon-arrow"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">XXXXXX</a></li>
+                    <li><a href="#">XXXXXX</a></li>
+                    <li><a href="#">XXXXXX</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown">Chemistry<i class="icon-arrow"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">XXXXXX</a></li>
+                    <li><a href="#">XXXXXX</a></li>
+                    <li><a href="#">XXXXXX</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown">Crime Scene Investigation<i class="icon-arrow"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">XXXXXX</a></li>
+                    <li><a href="#">XXXXXX</a></li>
+                    <li><a href="#">XXXXXX</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown">Geolocation<i class="icon-arrow"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">XXXXXX</a></li>
+                    <li><a href="#">XXXXXX</a></li>
+                    <li><a href="#">XXXXXX</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown">Life Forms<i class="icon-arrow"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Animalia</a></li>
+                    <li><a href="#">Archaea</a></li>
+                    <li><a href="#">Bacteria</a></li>
+                    <li><a href="#">Chromista</a></li>
+                    <li><a href="#">Fungi</a></li>
+                    <li><a href="#">Plantae</a></li>
+                    <li><a href="#">Protozoa</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown">Medicine<i class="icon-arrow"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Emergency Medicine</a></li>
+                    <li><a href="#">XXXXXX</a></li>
+                    <li><a href="#">XXXXXX</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown">XXXXXX<i class="icon-arrow"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">XXXXXX</a></li>
+                    <li><a href="#">XXXXXX</a></li>
+                    <li><a href="#">XXXXXX</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown">Tecnhology<i class="icon-arrow"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">XXXXXX</a></li>
+                    <li><a href="#">XXXXXX</a></li>
+                    <li><a href="#">XXXXXX</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown">XXXXXX<i class="icon-arrow"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">XXXXXX</a></li>
+                    <li><a href="#">XXXXXX</a></li>
+                    <li><a href="#">XXXXXX</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown">Settings</a>
+            </li>
+        </ul>
+        
+    </div>
+
+    <div id="main">
+
+        <div id="search-bar-container">
+            <input id="search-bar" type="search" placeholder="Search Bat Computer Files..."/>
+        </div>
+
+        <div id="results-container">
+
+        </div>
+
+        <div id="content-container">
+            
+        </div>
+
+    </div>
+    
+    <div id="tertiary-console-container">
+        <input id="console-input" placeholder="Enter a command..."/>
+    </div>
+
+    <div id="secondary-status-container">
+        <p id="secondary-status-text">scrolling text testing example over here....</p>
+    </div>
+
+    <div id="primary-status-container">
+        <p id="primary-status-text">00:00:00 XM 00/00/0000</p>
+    </div>
+
+    <!--
+    <footer>
+        <input id="footer-console" type="text" placeholder="Enter console commands here..."/>
+        <textarea id="footer-console-storage" type="textarea" enabled="false"></textarea>
+    </footer>
+    -->
+
+    <script type="text/javascript">
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.getElementById("tertiary-console-container").style.paddingLeft = "266px";
+            document.getElementById("button-control-nav").innerHTML = "X";
+
+            var navLinkList = document.getElementsByClassName("dropdown");
+
+            for(element of navLinkList) {
+                element.style.visibility = "visible";
+                element.style.opacity = "1.0";
+            }
+
+            document.getElementById("button-control-nav").setAttribute("onclick", "javascript: closeNav();");
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "60px";
+            document.getElementById("main").style.marginLeft= "60px";
+            document.getElementById("tertiary-console-container").style.paddingLeft= "76px";
+            document.getElementById("button-control-nav").innerHTML = "☰";
+            
+            var navLinkList = document.getElementsByClassName("dropdown");
+
+            for(element of navLinkList) {
+                element.style.visibility = "hidden";
+                element.style.opacity = "0";
+            }
+
+            document.getElementById("button-control-nav").setAttribute("onclick", "javascript: openNav();");
+        }
+    </script>
+
+    <script type="text/javascript">
+        // Dropdown Menu
+var dropdown = document.querySelectorAll('.dropdown');
+var dropdownArray = Array.prototype.slice.call(dropdown,0);
+dropdownArray.forEach(function(el){
+	var button = el.querySelector('a[data-toggle="dropdown"]'),
+			menu = el.querySelector('.dropdown-menu'),
+			arrow = button.querySelector('i.icon-arrow');
+
+	button.onclick = function(event) {
+		if(!menu.hasClass('show')) {
+			menu.classList.add('show');
+			menu.classList.remove('hide');
+			arrow.classList.add('open');
+			arrow.classList.remove('close');
+			event.preventDefault();
+		}
+		else {
+			menu.classList.remove('show');
+			menu.classList.add('hide');
+			arrow.classList.remove('open');
+			arrow.classList.add('close');
+			event.preventDefault();
+		}
+	};
+})
+
+Element.prototype.hasClass = function(className) {
+    return this.className && new RegExp("(^|\\s)" + className + "(\\s|$)").test(this.className);
+};
+    </script>
+
+    <script>
+
+        function primaryStatusBarText() {
+            var currentDate = new Date().toLocaleDateString();
+            var currentTime = new Date().toLocaleTimeString();
+
+            document.getElementById("primary-status-text").innerHTML = currentTime + " " + currentDate;
+        }
+
+        setInterval(primaryStatusBarText, 100);
+
+    </script>
+
+</body>
+
+</html>
+
